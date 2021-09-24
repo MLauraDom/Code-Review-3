@@ -25,9 +25,10 @@
     background-color: #EEEBFD;
     width: 100%;
     padding: 1%;
+    height: 30vh;
   }
   .pic {
-    width: 50vw;
+    width: 49vw;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -59,10 +60,10 @@
        object-fit: cover;
   }
   p {
-    font-size: smaller;
+    font-size: 0.6em;
   }
   h {
-    font-size: smaller;
+    font-size: 0.6em;
   }
 }
 
@@ -127,10 +128,10 @@
        object-fit: cover;
   }
   p {
-    font-size: small;
+    font-size: 0.7em;
   }
   h {
-    font-size: small;
+    font-size: 0.7em;
   }
 }
 
@@ -194,10 +195,10 @@
        object-fit: cover;
   }
   p {
-    font-size: normal;
+    font-size: 0.9em;
   }
   h {
-    font-size: normal;
+    font-size: 0.9em;
   }
 }
 /*# sourceMappingURL=style.css.map */
