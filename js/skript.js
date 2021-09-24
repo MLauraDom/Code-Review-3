@@ -10,3 +10,68 @@ Note: You should do it manually since we didn't learn how to take values from ht
 
 (10 points) Calculate at least 3 invoices using combinations of different dishes on your menu 
 and print them on the console (using one dish of each category).*/
+
+var starter = [["Ciorba de burta", 3.60], ["Ciorba de perisoare", 3.60], ["Platou rece", 5.70], ["Supa de taietei", 3.60]];
+var main = [["Fasole cu ciolan", 6.90], ["Grill Mix", 12.00], ["Sarmale", 8.90], ["Snitel de pui", 8.90]];
+var dessert = [["Clatite", 5.20], ["Gomboti", 5.20], ["Papanasi", 7.20], ["Savarine", 5.20]];
+var beverage = [["Bere la halba", 2.50], ["Palinca de prune", 2.50], ["Limonada de soc", 4.50], ["Visinata", 2.50]];
+var s = " ";
+
+
+
+
+
+
+
+
+
+
+
+console.log(s)
+console.log(s)
+console.log(s)
+console.log("Our MENU")
+console.log(s)
+console.log("STARTERS")
+console.log(s)
+ function calculateStarter(i) {
+    let space = 30 - starter[i][0].length;
+    console.log(starter[i][0] + s.repeat(space) + starter[i][1]);
+}
+
+for (var i = 0; i < 4; i++) {
+calculateStarter(i);
+}
+console.log(s)
+console.log("Main dishes")
+console.log(s)
+function calculateMain(i) {
+    let space = 30 - main[i][0].length;
+    console.log(main[i][0] + s.repeat(space) + main[i][1]);
+}
+
+for (var i = 0; i < 4; i++) {
+calculateMain(i);
+}
+console.log(s)
+console.log("Desserts")
+console.log(s)
+function calculateDessert(i) {
+    let space = 30 - dessert[i][0].length;
+    console.log(dessert[i][0] + s.repeat(space) + dessert[i][1]);
+}
+
+for (var i = 0; i < 4; i++) {
+calculateDessert(i);
+}
+console.log(s)
+console.log("Beverage")
+console.log(s)
+function calculateBeverage(i) {
+    let space = 30 - beverage[i][0].length;
+    console.log(beverage[i][0] + s.repeat(space) + beverage[i][1]);
+}
+
+for (var i = 0; i < 4; i++) {
+calculateBeverage(i);
+}
