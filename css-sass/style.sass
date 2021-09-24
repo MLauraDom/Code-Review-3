@@ -1,49 +1,143 @@
-// @media screen and (min-width: 320px) and (max-width: 480px)
-// @media screen and (min-width: 481px) and (max-width: 768px)
-// @media screen and (min-width: 768px)
 
-
-section
-    width: 98%
-    margin: auto
-    padding: 2% 0
-
-.grid1
-    display: grid
-    grid-template-columns: 1fr 1fr 1fr 1fr
-    gap: 2em 2em
-    padding: 0.2em
-    flex-direction: row
-    margin: auto
-
-
-.dish
-    margin: auto
-    display: flex
-    justify-content: space-between
-    flex-direction: column
-    background-color: #EEEBFD
-    height: 40vw
-
-.pic
-    height: 30vw
-    object-fit: cover
-
-img
-    width: 100%
-    height: 100%
-    object-fit: cover
-
-.desc
-    display: flex
-    flex-direction: column
-    height: 5em
-
-.price
-    text-align: right
-
-.heropic
-    width: 100%
-    height: 40vw
-    object-fit: cover
+@media screen and (min-width: 320px) and (max-width: 480px) 
     
+    .grid1
+        width: 100%
+        display: flex
+        flex-direction: column
+        margin: auto
+
+    .dish
+        margin: 1%
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+        background-color: #EEEBFD
+        width: 100%
+        padding: 1%
+
+    .pic
+        width: 50vw
+        object-fit: cover
+
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+    .desc
+        display: flex
+        flex-direction: column
+        width: 8em
+        padding: 1%
+
+    .price
+        text-align: right
+        color: green
+    
+    .heropic
+        width: 100%
+        height: 40vw
+        object-fit: cover
+
+    p
+        font-size: smaller
+
+    h
+        font-size: smaller
+
+@media screen and (min-width: 481px) and (max-width: 768px)
+
+    .grid1
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: 1fr 1fr
+        gap: 2em 2em
+        margin: auto
+
+    .dish
+        margin: auto
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+        background-color: #EEEBFD
+        width: 100%
+        padding: 2%
+        height: 25vw
+
+    .pic
+        width: 60%
+        object-fit: cover
+
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+    .desc
+        display: flex
+        flex-direction: column
+        width: 40%
+        padding: 2%
+
+    .price
+        text-align: right
+        color: green
+
+    .heropic
+        width: 100%
+        height: 40vw
+        object-fit: cover
+
+    p
+        font-size: small
+
+    h
+        font-size: small
+
+@media screen and (min-width: 768px) 
+       
+    .grid1
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        gap: 2em 2em
+        flex-direction: row
+        margin: auto
+
+    .dish
+        margin: auto
+        display: flex
+        justify-content: space-between
+        flex-direction: column
+        background-color: #EEEBFD
+        height: 40vw
+
+    .pic
+        height: 30vw
+        object-fit: cover
+
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+    .desc
+        display: flex
+        flex-direction: column
+        height: 5em
+        -webkit-font-feature-settings:
+
+    .price
+        text-align: right
+        color: green
+
+    .heropic
+        width: 100%
+        height: 40vw
+        object-fit: cover
+
+    p
+        font-size: normal
+
+    h
+        font-size: normal
