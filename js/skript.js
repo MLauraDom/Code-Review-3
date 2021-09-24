@@ -16,11 +16,27 @@ var main = [["Fasole cu ciolan", 6.90], ["Grill Mix", 12.00], ["Sarmale", 8.90],
 var dessert = [["Clatite", 5.20], ["Gomboti", 5.20], ["Papanasi", 7.20], ["Savarine", 5.20]];
 var beverage = [["Bere la halba", 2.50], ["Palinca de prune", 2.50], ["Limonada de soc", 4.50], ["Visinata", 2.50]];
 var s = " ";
+var a = integer;
+var b = integer;
+var c = integer;
+var d = integer;
 
-function.calculateInvoice(starterPrice)(maindishPrice)(dessertPrice)(beveragePrice) {
+function starterPrice(a)(b)(c)(d) {
+    starter[0][1]*=a;
+    starter[1][1]*=b;
+    starter[2][1]*=c;
+    starter[3][1]*=d;
+    if a>0 {
+        console.log(a + " x " + starter[0][0]) + s.repeat(26-starter[0][0].lenght) + a);
+    } ;   
+};
+
+starterPrice(1)(0)(0)(0);
+
+/*function calculateInvoice(starterPrice)(maindishPrice)(dessertPrice)(beveragePrice) {
     let summe = starterPrice + maindishPrice + dessertPrice + beveragePrice
     console.log("Summe" + s.repeat(24) + summe)
-}
+}*/
 
 
 
