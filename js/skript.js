@@ -17,6 +17,10 @@ var dessert = [["Clatite", 5.20], ["Gomboti", 5.20], ["Papanasi", 7.20], ["Savar
 var beverage = [["Bere la halba", 2.50], ["Palinca de prune", 2.50], ["Limonada de soc", 4.50], ["Visinata", 2.50]];
 var s = " ";
 
+function.calculateInvoice(starterPrice)(maindishPrice)(dessertPrice)(beveragePrice) {
+    let summe = starterPrice + maindishPrice + dessertPrice + beveragePrice
+    console.log("Summe" + s.repeat(24) + summe)
+}
 
 
 
@@ -34,44 +38,44 @@ console.log("Our MENU")
 console.log(s)
 console.log("STARTERS")
 console.log(s)
- function calculateStarter(i) {
+ function displayStarter(i) {
     let space = 30 - starter[i][0].length;
     console.log(starter[i][0] + s.repeat(space) + starter[i][1]);
 }
 
 for (var i = 0; i < 4; i++) {
-calculateStarter(i);
+displayStarter(i);
 }
 console.log(s)
 console.log("Main dishes")
 console.log(s)
-function calculateMain(i) {
+function displayMain(i) {
     let space = 30 - main[i][0].length;
     console.log(main[i][0] + s.repeat(space) + main[i][1]);
 }
 
 for (var i = 0; i < 4; i++) {
-calculateMain(i);
+displayMain(i);
 }
 console.log(s)
 console.log("Desserts")
 console.log(s)
-function calculateDessert(i) {
+function displayDessert(i) {
     let space = 30 - dessert[i][0].length;
     console.log(dessert[i][0] + s.repeat(space) + dessert[i][1]);
 }
 
 for (var i = 0; i < 4; i++) {
-calculateDessert(i);
+displayDessert(i);
 }
 console.log(s)
 console.log("Beverage")
 console.log(s)
-function calculateBeverage(i) {
+function displayBeverage(i) {
     let space = 30 - beverage[i][0].length;
     console.log(beverage[i][0] + s.repeat(space) + beverage[i][1]);
 }
 
 for (var i = 0; i < 4; i++) {
-calculateBeverage(i);
+displayBeverage(i);
 }
