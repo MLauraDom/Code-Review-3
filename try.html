@@ -17,92 +17,318 @@ Use responsive measurements (no pixels).
 (20 points) The subsections should be 4 in a row on larger screens, 
 2 in a row on medium screens and 1 in a row on small/extra small screens. 
 You are free to use either Bootstrap or implement Media Queries/FlexGrid/FlexBox to achieve this. -->
-
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Review 3</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"  
-    rel="stylesheet" 
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"  
-    crossorigin="anonymous">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Code Review 3</title>
+        <link rel="stylesheet" type='text/css' href="css-sass/style.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+            crossorigin="anonymous">
+    </head>
 
-<body>
-    <header>
-        <h1>
-            Restaurant "Cassablanca"
-        </h1>
-        <nav>
-            <ul class=menu>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="html/about.html">About</a></li>
-                <li><a href="html/contact.html">Contact</a></li>
-                <li><a href="html/review.html">Review</a></li>
-            </ul>
-        </nav>
-        <hero>
-            <img src="img/hero.jpg" alt="Restaurant" />
-        </hero>
-
-    </header>
-    <main>
-        <section>
-            <h3>
-                Starters
-            </h3>
-            <div>
-                <img src="img/start/burta.jpg" alt="Ciorba de burta" />
-                <img src="img/start/perisoare.jpg" alt="Ciorba de perisoare" />
-                <img src="img/start/teietei.jpg" alt="Supa de taietei" />
-                <img src="img/start/platou.jpg" alt="Platou rece" />
+    <body class="p-0">
+        <!--Header-->
+        <header class="bg-gradient bg-primary">
+            <!--Name-->
+            <div class="p-2">
+                <h1 class="text-light text-center">
+                    Restaurant "Cassablanca"
+                </h1>
             </div>
-        </section>
-        <section>
-            <h3>
-                Main Dishes
-            </h3>
-            <div>
-                <img src="img/main/fasole.jpg" alt="Fasole cu ciolan" />
-                <img src="img/main/grill.jpg" alt="Fasole cu ciolan" />
-                <img src="img/main/sarmale.jpg" alt="Sarmalute" />
-                <img src="img/main/snitel.jpg" alt="Snitel de pui" />
-            </div>
-        </section>
-        <section>
-            <h3>
-                Desserts
-            </h3>
-            <div>
-                <img src="img/deserts/clatite.jpg" alt="Clatite" />
-                <img src="img/deserts/gomboti.jpg" alt="Galuste cu prune" />
-                <img src="img/deserts/papanasi.jpg" alt="Papanasi" />
-                <img src="img/deserts/savarine.jpg" alt="Savarine" />
-            </div>
-        </section>
-        <section>
-            <h3>
-                Beverages
-            </h3>
-            <div>
-                <img src="img/bev/bere.jpg" alt="Bere la halba" />
-                <img src="img/bev/palinca2.jpg" alt="Palinca" />
-                <img src="img/bev/soc.jpg" alt="Limonada de soc" />
-                <img src="img/bev/visinata.jpg" alt="Visinata" />
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-
-    </footer>
-    <script type="text/javascript" src="js/skript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"  integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin ="anonymous"></script>
-</body>
+            <!--MENU-->
+            <nav class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">MENU</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="index.html">Home</a></li>
+                    <li><a class="dropdown-item" href="html/about.html">About us</a></li>
+                    <li><a class="dropdown-item" href="html/contact.html">Contact</a></li>
+                    <li><a class="dropdown-item" href="html/review.html">Review</a></li>
+                </ul>
+            </nav>
+            <!--Hero Banner-->
+                <img src="img/hero.jpg" alt="Restaurant" class="fluid"/>
+        </header>
+        <!--Main-->
+        <main class="p-5">
+            <section>
+                <!--Starters-->
+                <div class="container m-auto">
+                    <h2 class="text-center text-primary">
+                        Starters
+                    </h2>
+                </div>
+                <div class="grid1">
+                    <div class="dish">
+                        <div class="pic">
+                            <img src="img/start/burta.jpg" alt="Ciorba de burta"/>
+                        </div>
+                        <div class="desc">
+                            <h4>Ciorba de burta</h4>
+                            <p>
+                                Ciorba de burta ca la mama acasa.
+                            </p>
+                        </div>
+                        <h3 class=price>
+                            €3.60
+                        </h3>
+                    </div>
+                    <div class="dish">
+                        <div class="pic">
+                            <img src="img/start/perisoare.jpg" alt="Ciorba de perisoare" />
+                        </div>
+                        <div class="desc">
+                            <h4>Ciorba de perisoare</h4>
+                            <p>
+                                Ciorba de perisoare ca la mama acasa.
+                            </p>
+                        </div>
+                        <h3 class=price>
+                            €3.60
+                        </h3>
+                    </div>
+                    <div class="dish">
+                        <div class="pic">
+                            <img src="img/start/platou.png" alt="Platou rece" />
+                        </div>
+                        <div class="desc">
+                            <h4>Platou rece</h4>
+                            <p>
+                                Platou rece cu produse 100% romanesti.
+                            </p>
+                        </div>
+                        <h3 class=price>
+                            €5.70
+                        </h3>
+                    </div>
+                    <div class="dish">
+                        <div class="pic">
+                            <img src="img/start/taietei.jpg" alt="Taietei" />
+                        </div>
+                        <div class="desc">
+                            <h4>Supa de taietei</h4>
+                            <p>
+                                Supa de taietei ca la mama acasa
+                            </p>
+                        </div>
+                        <h3 class=price>
+                            €3.60
+                        </h3>
+                    </div>
+                </div>
+            </section>
+            <!--Main-->
+            <section>
+                <div class="container m-auto">
+                    <h2 class="text-center text-primary">
+                        Main dishes
+                    </h2>
+                </div>
+                <div class="grid1">
+                    <div class="dish">
+                        <div class="pic">
+                            <img src="img/main/fasole.jpg" alt="Fasole"/>
+                        </div>
+                        <div class="desc">
+                            <h4>Iahnie de fasole cu ciolan</h4>
+                            <p>
+                                Iahnie de fasole cu ciolan de porc, ca
+                                la mama acasa
+                            </p>
+                        </div>
+                        <h3 class=price>
+                            €6.90
+                        </h3>
+                    </div>
+                    <div class="dish">
+                        <div class="pic">
+                            <img src="img/main/grill.jpg" alt="Grill Mix 2 Pers." />
+                        </div>
+                        <div class="desc">
+                            <h4>Grill Mix 2 Pers.</h4>
+                            <p>
+                                Contine:mici, ceafa de porc, carnati de
+                                casa si pula de pui dezosata
+                            </p>
+                        </div>
+                        <h3 class=price>
+                            €12.00
+                        </h3>
+                    </div>
+                    <div class="dish">
+                        <div class="pic">
+                            <img src="img/main/sarmale.jpg" alt="Sarmalute" />
+                        </div>
+                        <div class="desc">
+                            <h4>Sarmalute cu mamaliga si smantana</h4>
+                            <p>
+                                Sarmale cu mamaliga, smantana si
+                                ardei iute.
+                            </p>
+                        </div>
+                        <h3 class=price>
+                            €8.90
+                        </h3>
+                    </div>
+                    <div class="dish">
+                        <div class="pic">
+                            <img src="img/main/snitel.jpg" alt="Snitel de pui" />
+                        </div>
+                        <div class="desc">
+                            <h4>Snitel de pui</h4>
+                            <p>
+                                Snitel din piept de pui si cartofi
+                                natur.
+                            </p>
+                        </div>
+                        <h3 class=price>
+                            €8.90
+                        </h3>
+                    </div>
+                </div>
+            </section>
+            <!--Desserts-->
+            <section>
+                <div class="container m-auto">
+                    <h2 class="text-center text-primary">
+                        Desserts
+                    </h2>
+                </div>
+                <div class="grid1">
+                    <div class="dish">
+                        <div class="pic">
+                            <img src="img/deserts/clatite.jpg" alt="Clatite" />
+                        </div>
+                        <div class="desc">
+                            <h4>Clatite</h4>
+                            <p>
+                                Clatite de casa cu dulceata sau
+                                cu Nutella.
+                            </p>
+                        </div>
+                        <h3 class=price>
+                            €5.20
+                        </h3>
+                    </div>
+                    <div class="dish">
+                        <div class="pic">
+                            <img src="img/deserts/gomboti.jpg" alt="Galuste" />
+                        </div>
+                        <div class="desc">
+                            <h4>Gomboti</h4>
+                            <p>
+                                Galuste cu prune, ca la mama
+                                acasa.
+                            </p>
+                        </div>
+                        <h3 class=price>
+                            €5.20
+                        </h3>
+                    </div>
+                    <div class="dish">
+                        <div class="pic">
+                            <img src="img/deserts/papanasi.jpg" alt="Papanasi" />
+                        </div>
+                        <div class="desc">
+                            <h4>Papanasi</h4>
+                            <p>
+                                Papanasi cu dulceata de fructe
+                                de padure si smantana.
+                            </p>
+                        </div>
+                        <h3 class=price>
+                            €7.20
+                        </h3>
+                    </div>
+                    <div class="dish">
+                        <div class="pic">
+                            <img src="img/deserts/savarine.jpg" alt="Savarine" />
+                        </div>
+                        <div class="desc">
+                            <h4>Savarine</h4>
+                            <p>
+                                Savarine insiropate, ca la mama
+                                acasa.
+                            </p>
+                        </div>
+                        <h3 class=price>
+                            €5.20
+                        </h3>
+                    </div>
+                </div>
+            </section>
+            <!--Beverage-->
+            <section>
+                <div class="container m-auto">
+                    <h2 class="text-center text-primary">
+                        Beverages
+                    </h2>
+                </div>
+                <div class="grid1">
+                    <div class="dish">
+                        <div class="pic">
+                            <img src="img/bev/bere.jpg" alt="Bere la halba" />
+                        </div>
+                        <div class="desc">
+                            <h4>Bere la halba</h4>
+                        </div>
+                        <h3 class=price>
+                            €2.50
+                        </h3>
+                    </div>
+                    <div class="dish">
+                        <div class="pic">
+                            <img
+                            src="img/bev/palinca2.jpg" alt="Palinca" />
+                        </div>
+                        <div class="desc">
+                            <h4>Palinca de pruna</h4>
+                        </div>
+                        <h3 class=price>
+                            €2.50
+                        </h3>
+                    </div>
+                    <div class="dish">
+                        <div class="pic">
+                            <img src="img/bev/soc.jpg" alt="Limonada de soc" />
+                        </div>
+                        <div class="desc">
+                            <h4>Limonada de soc</h4>
+                        </div>
+                        <h3 class=price>
+                            €4.50
+                        </h3>
+                    </div>
+                    <div class="dish">
+                        <div class="pic">
+                            <img
+                        src="img/bev/visinata.jpg" alt="Visinata" />
+                        </div>
+                        <div class="desc">
+                            <h4>Visinata</h4>
+                        </div>
+                        <h3 class=price>
+                            €2.50
+                        </h3>
+                    </div>  
+                </div>
+            </section>
+        </main>
+        <!--Javaskript-->
+        <script type="text/javascript" src="js/skript.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"integrity="sha384-b5kHyXgch4ZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+        </script>
+                <!--Footer-->
+        <footer class="bg-gradient bg-primary p-3">
+            <h1 class="text-light text-center">Restaurant "Cassablanca"</h1>
+            <p class="text-light text-center">Made by Marcela-Laura Moldovan</p>
+        </footer>
+    </body>
 
 </html>
