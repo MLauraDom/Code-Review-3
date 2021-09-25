@@ -54,25 +54,25 @@ function starterShow(a, b, c, d) {
 if (a > 0) {
   let space = 30 - starter[0][0].length;
   console.log(
-    a + " x " + starter[0][0] + s.repeat(space) + "€ " + a*starter[0][1].toFixed(2)
+    a + " x " + starter[0][0] + s.repeat(space) + "€ " + (a*starter[0][1]).toFixed(2)
   );
 }
 if (b > 0) {
   let space = 30 - starter[1][0].length;
   console.log(
-    b + " x " + starter[1][0] + s.repeat(space) + "€ " + b*starter[1][1].toFixed(2)
+    b + " x " + starter[1][0] + s.repeat(space) + "€ " + (b*starter[1][1]).toFixed(2)
   );
 }
 if (c > 0) {
   let space = 30 - starter[2][0].length;
   console.log(
-    c + " x " + starter[2][0] + s.repeat(space) + "€ " + c*starter[2][1].toFixed(2)
+    c + " x " + starter[2][0] + s.repeat(space) + "€ " + (c*starter[2][1]).toFixed(2)
   );
 }
 if (d > 0) {
   let space = 30 - starter[3][0].length;
   console.log(
-    d + " x " + starter[3][0] + s.repeat(space) + "€ " + d*starter[3][1].toFixed(2)
+    d + " x " + starter[3][0] + s.repeat(space) + "€ " + (d*starter[3][1]).toFixed(2)
   );
 }
 };
@@ -91,7 +91,7 @@ function calculateMaindish(a, b, c, d) {
 function showMaindishSumme(a, b, c, d) {
   var maindishSumme = a*maindish[0][1] + b*maindish[1][1] + c*maindish[2][1] + d*maindish[3][1];
   if (maindishSumme > 0) {
-    console.log(s.repeat(18) + "Summe Maindishs: " + "€ " + maindishSumme.toFixed(2));}
+    console.log(s.repeat(18) + "Summe Maindish: " + "€ " + maindishSumme.toFixed(2));}
   return maindishSumme;
 };
 
@@ -101,25 +101,25 @@ function maindishShow(a, b, c, d) {
   if (a > 0) {
     let space = 30 - maindish[0][0].length;
     console.log(
-      a + " x " + maindish[0][0] + s.repeat(space) + "€ " + a*maindish[0][1].toFixed(2)
+      a + " x " + maindish[0][0] + s.repeat(space) + "€ " + (a*maindish[0][1]).toFixed(2)
     );
   }
   if (b > 0) {
     let space = 30 - maindish[1][0].length;
     console.log(
-      b + " x " + maindish[1][0] + s.repeat(space) + "€ " + b*maindish[1][1].toFixed(2)
+      b + " x " + maindish[1][0] + s.repeat(space) + "€ " + (b*maindish[1][1]).toFixed(2)
     );
   }
   if (c > 0) {
     let space = 30 - maindish[2][0].length;
     console.log(
-      c + " x " + maindish[2][0] + s.repeat(space) + "€ " + c*maindish[2][1].toFixed(2)
+      c + " x " + maindish[2][0] + s.repeat(space) + "€ " + (c*maindish[2][1]).toFixed(2)
     );
   }
   if (d > 0) {
     let space = 30 - maindish[3][0].length;
     console.log(
-      d + " x " + maindish[3][0] + s.repeat(space) + "€ " + d*maindish[3][1].toFixed(2)
+      d + " x " + maindish[3][0] + s.repeat(space) + "€ " + (d*maindish[3][1]).toFixed(2)
     );
   }
 };
@@ -146,25 +146,25 @@ function dessertShow(a, b, c, d) {
   if (a > 0) {
     let space = 30 - dessert[0][0].length;
     console.log(
-      a + " x " + dessert[0][0] + s.repeat(space) + "€ " + a*dessert[0][1].toFixed(2)
+      a + " x " + dessert[0][0] + s.repeat(space) + "€ " + (a*dessert[0][1]).toFixed(2)
     );
   }
   if (b > 0) {
     let space = 30 - dessert[1][0].length;
     console.log(
-      b + " x " + dessert[1][0] + s.repeat(space) + "€ " + b*dessert[1][1].toFixed(2)
+      b + " x " + dessert[1][0] + s.repeat(space) + "€ " + (b*dessert[1][1]).toFixed(2)
     );
   }
   if (c > 0) {
     let space = 30 - dessert[2][0].length;
     console.log(
-      c + " x " + dessert[2][0] + s.repeat(space) + "€ " + c*dessert[2][1].toFixed(2)
+      c + " x " + dessert[2][0] + s.repeat(space) + "€ " + (c*dessert[2][1]).toFixed(2)
     );
   }
   if (d > 0) {
     let space = 30 - dessert[3][0].length;
     console.log(
-      d + " x " + dessert[3][0] + s.repeat(space) + "€ " + d*dessert[3][1].toFixed(2)
+      d + " x " + dessert[3][0] + s.repeat(space) + "€ " + (d*dessert[3][1]).toFixed(2)
     );
   }
 };
@@ -192,25 +192,25 @@ function beverageShow(a, b, c, d) {
   if (a > 0) {
     let space = 30 - beverage[0][0].length;
     console.log(
-      a + " x " + beverage[0][0] + s.repeat(space) + "€ " + a*beverage[0][1].toFixed(2)
+      a + " x " + beverage[0][0] + s.repeat(space) + "€ " + (a*beverage[0][1]).toFixed(2)
     );
   }
   if (b > 0) {
     let space = 30 - beverage[1][0].length;
     console.log(
-      b + " x " + beverage[1][0] + s.repeat(space) + "€ " + b*beverage[1][1].toFixed(2)
+      b + " x " + beverage[1][0] + s.repeat(space) + "€ " + (b*beverage[1][1]).toFixed(2)
     );
   }
   if (c > 0) {
     let space = 30 - beverage[2][0].length;
     console.log(
-      c + " x " + beverage[2][0] + s.repeat(space) + "€ " + c*beverage[2][1].toFixed(2)
+      c + " x " + beverage[2][0] + s.repeat(space) + "€ " + (c*beverage[2][1]).toFixed(2)
     );
   }
   if (d > 0) {
     let space = 30 - beverage[3][0].length;
     console.log(
-      d + " x " + beverage[3][0] + s.repeat(space) + "€ " + d*beverage[3][1].toFixed(2)
+      d + " x " + beverage[3][0] + s.repeat(space) + "€ " + (d*beverage[3][1]).toFixed(2)
     );
   }
 };
@@ -237,12 +237,11 @@ function calculateInvoiceStudents(
   return summe;
 };
 
-function allTogheter(w, x, y, z) {
-
-}
-
 // Test Functions
 
+console.log(s.repeat(10) + 'RESTAURANT "CASSABLANCA"')
+console.log(s.repeat(15) + "Invoice")
+console.log(s)
 starterShow(1, 0, 0, 0);
 showStarterSumme(1, 0, 0, 0);
 maindishShow(0, 1, 0, 0);
@@ -269,6 +268,9 @@ maindishPrice = 0;
 dessertPrice = 0;
 beveragePrice = 0;
 
+console.log(s.repeat(10) + 'RESTAURANT "CASSABLANCA"')
+console.log(s.repeat(15) + "Invoice")
+console.log(s)
 starterShow(0, 1, 0, 0);
 showStarterSumme(0, 1, 0, 0);
 maindishShow(1, 0, 0, 0);
@@ -295,6 +297,9 @@ maindishPrice = 0;
 dessertPrice = 0;
 beveragePrice = 0;
 
+console.log(s.repeat(10) + 'RESTAURANT "CASSABLANCA"')
+console.log(s.repeat(15) + "Invoice")
+console.log(s)
 starterShow(0, 0, 0, 1);
 showStarterSumme(0, 0, 0, 1);
 maindishShow(0, 0, 1, 0);
@@ -321,6 +326,9 @@ maindishPrice = 0;
 dessertPrice = 0;
 beveragePrice = 0;
 
+console.log(s.repeat(10) + 'RESTAURANT "CASSABLANCA"')
+console.log(s.repeat(15) + "Invoice")
+console.log(s)
 starterShow(1, 2, 3, 4);
 showStarterSumme(1, 2, 3, 4);
 maindishShow(4, 3, 2, 1);
