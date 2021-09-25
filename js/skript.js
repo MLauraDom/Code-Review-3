@@ -37,9 +37,9 @@ function starter(a, b, c, d) {
       d + " x " + starter[3][0] + s.repeat(space) + "€ " + starter[3][1]
     );
   }
-  starterPrice = starter[0][1] + starter[1][1] + starter[2][1] + starter[3][1];
+var starterPrice = starter[0][1] + starter[1][1] + starter[2][1] + starter[3][1];
   console.log(s.repeat(18) + "Summe Starters: " + "€ " + starterPrice);
-  console.log(s);
+  return starterPrice;
 }
 
 //function Main Dish
@@ -79,9 +79,9 @@ function maindish(a, b, c, d) {
       d + " x " + maindish[3][0] + s.repeat(space) + "€ " + maindish[3][1]
     );
   }
-  maindishPrice =
-    maindish[0][1] + maindish[1][1] + maindish[2][1] + maindish[3][1];
+  var maindishPrice = maindish[0][1] + maindish[1][1] + maindish[2][1] + maindish[3][1];
   console.log(s.repeat(15) + "Summe Main Dishes: " + "€ " + maindishPrice);
+  return maindishPrice;
   console.log(s);
 }
 
@@ -122,9 +122,9 @@ function dessert(a, b, c, d) {
       d + " x " + dessert[3][0] + s.repeat(space) + "€ " + dessert[3][1]
     );
   }
-  dessertPrice = dessert[0][1] + dessert[1][1] + dessert[2][1] + dessert[3][1];
+  var dessertPrice = dessert[0][1] + dessert[1][1] + dessert[2][1] + dessert[3][1];
   console.log(s.repeat(18) + "Summe desserts: " + "€ " + dessertPrice);
-  console.log(s);
+  return dessertPrice;
 }
 
 //function Beverage
@@ -164,10 +164,9 @@ function beverage(a, b, c, d) {
       d + " x " + beverage[3][0] + s.repeat(space) + "€ " + beverage[3][1]
     );
   }
-  beveragePrice =
-    beverage[0][1] + beverage[1][1] + beverage[2][1] + beverage[3][1];
+  var beveragePrice = beverage[0][1] + beverage[1][1] + beverage[2][1] + beverage[3][1];
   console.log(s.repeat(17) + "Summe beverages: " + "€ " + beveragePrice);
-  console.log(s);
+  return beveragePrice;
 }
 
 //function calculateInvoice
@@ -180,11 +179,17 @@ function calculateInvoice(
 ) {
   let summe = starterPrice + maindishPrice + dessertPrice + beveragePrice;
   console.log("Total Summe" + s.repeat(23) + "€ " + summe);
-  console.log(s)
-  console.log(s)
-  console.log(s)
-  console.log(s)
+  return summe;
 }
+
+//Testing the functions
+
+starter(1, 2, 3, 4);
+maindish(4, 3, 2, 1);
+dessert(2, 1, 4, 3);
+beverage(3, 4, 1, 2);
+
+calculateInvoice(starterPrice, maindishPrice, dessertPrice, beveragePrice);
 
 starter(1, 0, 0, 0);
 maindish(0, 1, 0, 0);
@@ -207,59 +212,3 @@ beverage(1, 0, 0, 0);
 
 calculateInvoice(starterPrice, maindishPrice, dessertPrice, beveragePrice);
 
-starter(1, 2, 3, 4);
-maindish(4, 3, 2, 1);
-dessert(2, 1, 4, 3);
-beverage(3, 4, 1, 2);
-
-calculateInvoice(starterPrice, maindishPrice, dessertPrice, beveragePrice);
-/*
-console.log(s)
-console.log(s)
-console.log(s)
-console.log("Our MENU")
-console.log(s)
-console.log("STARTERS")
-console.log(s)
- function displayStarter(i) {
-    let space = 30 - starter[i][0].length;
-    console.log(starter[i][0] + s.repeat(space) + starter[i][1]);
-}
-
-for (var i = 0; i < 4; i++) {
-displayStarter(i);
-}
-console.log(s)
-console.log("Main dishes")
-console.log(s)
-function displayMain(i) {
-    let space = 30 - main[i][0].length;
-    console.log(main[i][0] + s.repeat(space) + main[i][1]);
-}
-
-for (var i = 0; i < 4; i++) {
-displayMain(i);
-}
-console.log(s)
-console.log("Desserts")
-console.log(s)
-function displayDessert(i) {
-    let space = 30 - dessert[i][0].length;
-    console.log(dessert[i][0] + s.repeat(space) + dessert[i][1]);
-}
-
-for (var i = 0; i < 4; i++) {
-displayDessert(i);
-}
-console.log(s)
-console.log("Beverage")
-console.log(s)
-function displayBeverage(i) {
-    let space = 30 - beverage[i][0].length;
-    console.log(beverage[i][0] + s.repeat(space) + beverage[i][1]);
-}
-
-for (var i = 0; i < 4; i++) {
-displayBeverage(i);
-}
-*/
