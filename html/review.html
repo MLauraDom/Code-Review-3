@@ -1,91 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Review Page</title>
-        <link rel="stylesheet" type='text/css' href="../css-sass/style.css" />
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-            crossorigin="anonymous">
-    </head>
-    <style>
-        .rating {
-            unicode-bidi: bidi-override;
-            direction: rtl;
-        }
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+    <link rel="stylesheet" type='text/css' href="../css-sass/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<style>
+    section div figure {
+        width: 17%;
+    }
 
-        .rating > span {
-            display: inline-block;
-            position: relative;
-            width: 1.1em;
-        }
-        .rating > span:hover:before,
-        .rating > span:hover ~ span:before {
-            content: "\2605";
-            position: absolute;
-        }
-    </style>
+    section div p {
+        width: 80%;
+        text-align: center;
+    }
 
-    <body class="p-0">
-        <!--Header-->
-        <header class="bg-gradient bg-primary">
-            <!--Name-->
-            <div class="p-2">
-                <p class="h1 text-light text-center">
-                    Restaurant "Cassablanca"
+    figcaption {
+        -webkit-text-stroke: 0.01em rgb(15, 18, 20);
+        text-shadow: 0.07em 0.07em rgb(39, 45, 49);
+    }
+
+    .review {}
+
+    .rating {
+        unicode-bidi: bidi-override;
+        direction: rtl;
+    }
+
+    .rating>span {
+        display: inline-block;
+        position: relative;
+        width: 1.1em;
+    }
+
+    .rating>span:hover:before,
+    .rating>span:hover~span:before {
+        content: "\2605";
+        position: absolute;
+    }
+</style>
+
+<body class="p-0">
+    <!--Header-->
+    <header class="bg-gradient bg-primary">
+        <!--Name-->
+        <div class="p-2">
+            <p class="h1 text-light text-center">
+                Restaurant "Cassablanca"
+            </p>
+        </div>
+        <!--MENU-->
+        <nav class="nav-item dropdown">
+            <a class="h3 nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button"
+                aria-expanded="false">MENU</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../index.html">Home</a></li>
+                <li><a class="dropdown-item" href="about.html">About us</a></li>
+                <li><a class="dropdown-item" href="review.html">Review</a></li>
+            </ul>
+        </nav>
+        <!--Hero Banner-->
+        <div class="heropic">
+            <img src="../img/review.jpg" alt="Restaurant" class="fluid" />
+        </div>
+    </header>
+    <main class="container-lg w-80 m-auto p-2">
+        <p class="h1 text-center text-dark">Review Page</p>
+        <div class="display-1 text-center p-5 text-primary">
+            <span>&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+        </div>
+        
+       < <!--Reviews-->>
+
+        <section class="d-flex flex-column bd-highlight mb-3 p-5">
+            <div class="d-flex align-items-stretch">
+                <figure class="p-2 w-10 h-10">
+                    <img src="../img/review/dominic.jpg" class="rounded float-start w-100" alt="Dominic">
+                    <figcaption class="h5 text-primary position-absolute p-2">Dominic</figcaption>
+                </figure>
+                <p class="p-1 blockquote fst-italic">
+                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <br />
+                    "This cozy restaurant has left the best impressions!
+                    Hospitable hosts, delicious dishes, beautiful
+                    presentation, wide wine list and wonderful dessert.
+                    I recommend to everyone! I would like to come back here
+                    again and again."
                 </p>
             </div>
-                                    <!--MENU-->
-            <nav class="nav-item dropdown">
-                <a class="h3 nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">MENU</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../index.html">Home</a></li>
-                    <li><a class="dropdown-item" href="about.html">About us</a></li>
-                    <li><a class="dropdown-item" href="review.html">Review</a></li>
-                </ul>
-            </nav>
-            <!--Hero Banner-->
-            <div class=heropic>
-                <img src="../img/review.jpg" alt="Restaurant" class="fluid"/>
+            <div class="d-flex align-items-stretch">
+                <figure class="p-2 w-10 h-10">
+                    <img src="../img/review/laura.jpg" class="rounded float-start w-100" alt="Laura">
+                    <figcaption class="h5 text-primary position-absolute p-2">Laura</figcaption>
+                </figure>
+                <p class="p-1 blockquote fst-italic">
+                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <br />
+                    "First time in Vienna and YOU have to go! It’s the cutest
+                    little spot with amazing food.
+                    The "Palinca de prune" is to die for. IT WAS FIRE!!
+                    The service we received was so amazing and we will
+                    definitely be back again.
+                    They made us feel welcomed and gave us an amazing
+                    experience."
+                </p>
             </div>
-        </header>
-        <main class="container-lg w-50 m-auto p-5">
-            <p class="h1 text-center text-dark">Review Page</p><br/><br/>
+            <div class="d-flex align-items-stretch">
+                <figure class="p-2 w-10 h-10">
+                    <img src="../img/review/dorina.jpg" class="rounded float-start w-100" alt="Dorina">
+                    <figcaption class="h5 text-primary position-absolute p-2">Dorina</figcaption>
+                </figure>
+                <p class="p-1 blockquote fst-italic">
+                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <br />
+                    "It’s a great experience. The ambiance is very welcoming
+                    and charming.
+                    Amazing wines, food and service. Staff are extremely
+                    knowledgeable and make great recommendations."
+                </p>
+            </div>
+            <div class="d-flex align-items-stretch">
+                <figure class="p-2 w-10 h-10">
+                    <img src="../img/review/george.jpg" class="rounded float-start w-100" alt="George">
+                    <figcaption class="h5 text-primary position-absolute p-2">George</figcaption>
+                </figure>
+                <p class="p-1 blockquote fst-italic">
+                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <br />
+                    "This place is great! Atmosphere is chill and cool but the
+                    staff is also really friendly.
+                    They know what they’re doing and what they’re talking
+                    about, and you can tell making the customers
+                    happy is their main priority. Food is pretty good, some
+                    italian classics and some twists,
+                    and for their prices it’s 100% worth it."
+                </p>
+            </div>
+            <div class="d-flex align-items-stretch">
+                <figure class="p-2 w-10 h-10">
+                    <img src="../img/review/lumy.jpg" class="rounded float-start w-100" alt="Lumy">
+                    <figcaption class="h5 text-primary position-absolute p-2">Lumy</figcaption>
+                </figure>
+                <p class="p-1 blockquote fst-italic">
+                    <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    <br />
+                    "Do yourself a favor and visit this lovely restaurant in
+                    (CN). The service is unmatched.
+                    The staff truly cares about your experience.
+                    The food is absolutely amazing – everything we tasted
+                    melted in other mouths.
+                    Absolutely the best meal we had while in (CN). Highly
+                    recommend!"
+                </p>
+            </div>
+        </section>
+        <!--Form Review-->
+        <section class="container-lg w-50 m-auto p-5">
+            <p class="h2 text-primary p-3 text-center">Your Opinion matters!</p>
             <form class="text-dark text-center bg-gradient bg-light vw-50 m-auto">
                 <div class="mb-3">
                     <label for="exampleInputPassword1" class="form-label">Name</label>
                     <input type="name" class="form-control" id="exampleInputName">
-                  </div>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label w-30">Email address</label>
-                  <input type="email" class="form-control w-30" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
-                  <label for="exampleRating" class="form-label w-30">Rate us!</label>
-                  <div class="rating"></div><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span></div>
-                </div>    
+                    <label for="exampleInputEmail1" class="form-label w-30">Email address</label>
+                    <input type="email" class="form-control w-30" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never
+                        share your email with anyone else.</div>
+                </div>
                 <div class="mb-3">
-                    <label for="exampleInputTextarea" class="form-label w-30">Your Opinion matters!</label>
-                    <textarea name="message" rows="10" cols="40" class="form-control text-primary"> Write your Review here...
-                    </textarea>
+                    <label for="exampleRating" class="form-label w-30">Rate us!</label>
+                    <div class="rating"></div><span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputTextarea" class="form-label w-30">Your Review</label>
+                    <textarea name="message" rows="10" cols="40" class="form-control text-primary">
+                    Write your Review here...
+                </textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-        </main>
-        <!--Javaskript-->
-        <script type="text/javascript" src="../js/skript.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-                <!--Footer-->
-        <footer class="bg-gradient bg-primary p-3">
-            <h1 class="text-light text-center">Restaurant "Cassablanca"</h1>
-            <p class="text-light text-center">Made by Marcela-Laura Moldovan</p>
-        </footer>
-    </body>
+            </form>
+        </section>
+    </main>
+    <!--Javaskript-->
+    <script type="text/javascript" src="../js/skript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <!--Footer-->
+    <footer class="bg-gradient bg-primary p-3">
+        <h1 class="text-light text-center">Restaurant "Cassablanca"</h1>
+        <p class="text-light text-center">Made by Marcela-Laura Moldovan</p>
+    </footer>
+</body>
 
 </html>
