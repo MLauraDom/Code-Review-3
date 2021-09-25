@@ -1,7 +1,9 @@
+var s = " ";
+
 //function Starter
 
-function starterPrice(a, b, c, d) {
-  var starter = [
+function starter(a, b, c, d) {
+  let starter = [
     ["Ciorba de burta", 3.6],
     ["Ciorba de perisoare", 3.6],
     ["Platou rece", 5.7],
@@ -42,8 +44,8 @@ function starterPrice(a, b, c, d) {
 
 //function Main Dish
 
-function maindishPrice(a, b, c, d) {
-  var maindish = [
+function maindish(a, b, c, d) {
+  let maindish = [
     ["Fasole cu ciolan", 6.9],
     ["Grill Mix", 12.0],
     ["Sarmale", 8.9],
@@ -85,8 +87,8 @@ function maindishPrice(a, b, c, d) {
 
 //function Dessert
 
-function dessertPrice(a, b, c, d) {
-  var dessert = [
+function dessert(a, b, c, d) {
+  let dessert = [
     ["Clatite", 5.2],
     ["Gomboti", 5.2],
     ["Papanasi", 7.2],
@@ -127,8 +129,8 @@ function dessertPrice(a, b, c, d) {
 
 //function Beverage
 
-function beveragePrice(a, b, c, d) {
-  var beverage = [
+function beverage(a, b, c, d) {
+  let beverage = [
     ["Bere la halba", 2.5],
     ["Palinca de prune", 2.5],
     ["Limonada de soc", 4.5],
@@ -176,36 +178,39 @@ function calculateInvoice(
   dessertPrice,
   beveragePrice
 ) {
-  var s = " ";
-  starterPrice(1, 0, 0, 0);
-  maindishPrice(0, 1, 0, 0);
-  dessertPrice(0, 0, 1, 0);
-  beveragePrice(0, 0, 0, 1);
   let summe = starterPrice + maindishPrice + dessertPrice + beveragePrice;
-  console.log("Summe" + s.repeat(29) + "€ " + summe);
+  console.log("Total Summe" + s.repeat(23) + "€ " + summe);
+  console.log(s)
+  console.log(s)
+  console.log(s)
+  console.log(s)
 }
 
-calculateInvoice(starterPrice, maindishPrice, dessertPrice, beveragePrice);
-
-/*
-starterPrice(0, 1, 0, 0);
-maindishPrice(1, 0, 0, 0);
-dessertPrice(0, 0, 0, 1);
-beveragePrice(0, 0, 1, 0);
+starter(1, 0, 0, 0);
+maindish(0, 1, 0, 0);
+dessert(0, 0, 1, 0);
+beverage(0, 0, 0, 1);
 
 calculateInvoice(starterPrice, maindishPrice, dessertPrice, beveragePrice);
 
-starterPrice(0, 0, 0, 1);
-maindishPrice(0, 0, 1, 0);
-dessertPrice(0, 1, 0, 0);
-beveragePrice(1, 0, 0, 0);
+starter(0, 1, 0, 0);
+maindish(1, 0, 0, 0);
+dessert(0, 0, 0, 1);
+beverage(0, 0, 1, 0);
 
 calculateInvoice(starterPrice, maindishPrice, dessertPrice, beveragePrice);
 
-starterPrice(1, 2, 3, 4);
-maindishPrice(4, 3, 2, 1);
-dessertPrice(2, 1, 4, 3);
-beveragePrice(3, 4, 1, 2);
+starter(0, 0, 0, 1);
+maindish(0, 0, 1, 0);
+dessert(0, 1, 0, 0);
+beverage(1, 0, 0, 0);
+
+calculateInvoice(starterPrice, maindishPrice, dessertPrice, beveragePrice);
+
+starter(1, 2, 3, 4);
+maindish(4, 3, 2, 1);
+dessert(2, 1, 4, 3);
+beverage(3, 4, 1, 2);
 
 calculateInvoice(starterPrice, maindishPrice, dessertPrice, beveragePrice);
 /*
